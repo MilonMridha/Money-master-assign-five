@@ -61,7 +61,8 @@ document.getElementById('save-btn').addEventListener('click', function (){
     alert('please enter positive number')
 }
  const currentBalance = document.getElementById('income-input').value;
-  const monthlysavings = currentBalance * savingPercentAmout / 100;
+
+ const monthlysavings = currentBalance * savingPercentAmout / 100;
  
   saveAmount.innerText = monthlysavings;
   const restBalanceText = document.getElementById('rest-balance').innerText;
@@ -71,5 +72,5 @@ document.getElementById('save-btn').addEventListener('click', function (){
 }
 
   remainBalance.innerText = restBalanceAmount - monthlysavings;
-   
+   // end js file
 });

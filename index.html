@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Money Voucher</title>
+    <!-- tailwind css Style link --- -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- Header Start ---------------- -->
+    <header>
+            <h1 class="text-4xl text-center mt-5 text-yellow-600">Monthly-Money-Voucher</h1>
+    </header>
+    <!-- Header End ------------------ -->
+    
+    
+    <!-- Money-voucher start  -->
+<main class="w-3/4 mx-auto">
+        <section class="mt-5">
+            <div class="grid grid-cols-2 gap-5">
+                <div class="">
+                    <img class="rounded"  width="1000px " height="600px"  src="image/person-carrying-lot-cash_53876-65367 (1).jpg" alt="">
+                </div>
+                <!-- Income & Expences  -->
+                <div class="text-center drop-shadow-lg bg-green-200 rounded-md">
+                    <h4 class="text-2xl text-center">Income</h4>
+                    income : <input id="income-input" class="border border-gray-300 rounded bg-zinc-300  mb-4 px-2" type="text" placeholder="$  amount to income">
+                    <h4 class="text-xl text-center" >Expences</h4>
+                      Food : <input id="food-cost" class="border border-gray-300 rounded bg-zinc-300  mb-4 px-2" type="text" placeholder="$  amount to expence"><br>
+                      
+                      Rent :  <input id="rent-cost" class="border border-gray-300 rounded bg-zinc-300  mb-4 px-2" type="text" placeholder="$  amount to expence">
+                      <br>
+                      
+                      Clothes :  <input id="cloth-cost" class="border border-gray-300 rounded bg-zinc-300  mb-4 px-2" type="text" placeholder="$  amount to expence">
+                      
+                      <button id="total-btn" class="bg-blue-500 rounded-md px-4 py-2 text-white  font-semibold">Calculate</button>
+                      <br><br>
+                      <h4 class="text-xl">Total Expences : <span id="total-expence">00</span></h4>
+                      <h4 class="text-xl">Balance : <span id="rest-balance">00</span></h4> <br>
+
+                      save : <input id="" class="border border-gray-300 ms-0 rounded bg-zinc-300" type="text" placeholder="$  amount to savings"> %
+
+                      <button id="save-btn"
+                       class="bg-blue-500 rounded-md px-1  text-white  font-semibold ">Save</button>
+                       Saving Amount : <span>00</span><br>
+                       Remaining Balance : <span>00</span>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+
+    <script src="money.js"></script>
+</body>
+</html>

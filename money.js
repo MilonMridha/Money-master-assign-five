@@ -28,13 +28,15 @@ document.getElementById('total-btn').addEventListener('click', function (){
     const previousExpenceAmount = parseFloat(totalExpenceText);
     
    const  totalExpenceAmount = previousExpenceAmount + totalCostAmount;
+   
    totalExpence.innerText = totalExpenceAmount;
+   
     //income input---------------------
     const incomeInput = document.getElementById('income-input');
     const incomeInputText = incomeInput.value;
     const incomeInputAmount = parseFloat(incomeInputText);
-    if(incomeInputAmount < 0){
-        alert('please enter positive number')
+    if(incomeInputAmount < 0 || incomeInputAmount < totalExpenceAmount){
+        alert('please enter valid amount')
     }
     
     //rest balance

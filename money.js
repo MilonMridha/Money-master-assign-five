@@ -22,12 +22,13 @@ document.getElementById('total-btn').addEventListener('click', function (){
     }
     
     const totalCostAmount = foodCostAmount + rentCostAmount + clothCostAmount;
-
+// Total Expences calc-----------------
     const totalExpence = document.getElementById('total-expence');
     const totalExpenceText = totalExpence.innerText;
     const previousExpenceAmount = parseFloat(totalExpenceText);
     
    const  totalExpenceAmount = previousExpenceAmount + totalCostAmount;
+   
    
    totalExpence.innerText = totalExpenceAmount;
    
@@ -43,10 +44,10 @@ document.getElementById('total-btn').addEventListener('click', function (){
     const restBalance = document.getElementById('rest-balance');
     const restBalanceText = restBalance.innerText;
     const restBalanceAmount = parseFloat(restBalanceText);
-    console.log(restBalanceAmount);
+    
 
     restBalance.innerText = incomeInputAmount - totalExpenceAmount;
-
+    
 });
 // savings section ----------------------
 document.getElementById('save-btn').addEventListener('click', function (){

@@ -5,7 +5,7 @@ function getInputValue(inputId){
     inputField.value = '';
      return inputAmount;
 }
-
+// Handle click btn total--------------
 document.getElementById('total-btn').addEventListener('click', function (){
 
     const foodCostAmount = getInputValue('food-cost');

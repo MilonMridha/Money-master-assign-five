@@ -37,3 +37,22 @@ document.getElementById('total-btn').addEventListener('click', function (){
     restBalance.innerText = incomeInputAmount - totalExpenceAmount;
 
 });
+// savings section ----------------------
+document.getElementById('save-btn').addEventListener('click', function (){
+ const saveInput = document.getElementById('save-input');
+ const saveAmount = document.getElementById('save-amount');
+ const saveAmountText = saveAmount.innerText;
+ const saveAmountTotal = parseFloat(saveAmountText);
+ const remainBalance = document.getElementById('remain-balance');
+ const savingsPercentText = saveInput.value;
+ const savingPercentAmout = parseFloat(savingsPercentText);
+
+ const currentBalance = document.getElementById('income-input').value;
+  const monthlysavings = currentBalance * savingPercentAmout / 100;
+  saveAmount.innerText = monthlysavings;
+  const restBalanceText = document.getElementById('rest-balance').innerText;
+  const restBalanceAmount = parseFloat(restBalanceText);
+
+  remainBalance.innerText = restBalanceAmount - monthlysavings;
+   
+});
